@@ -4,10 +4,8 @@
 target 'PMP' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
+  pod 'Gimbal'
 
   # Pods for PMP
-  target 'MyApp' do
-    pod 'Gimbal'
-end
 
 end

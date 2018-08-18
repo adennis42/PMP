@@ -21,6 +21,7 @@
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		97256F5757437CFEC638968C446084E9 /* Pods-PMP-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PMP-acknowledgements.markdown"; sourceTree = "<group>"; };
 		9C13910A339858BC6B1BB02C35CEB027 /* Pods-PMP-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PMP-frameworks.sh"; sourceTree = "<group>"; };
+		B535B65AA6AA567798E6EAB5D6808C22 /* Gimbal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Gimbal.framework; path = Frameworks/Gimbal.framework; sourceTree = "<group>"; };
 		C32DACA77E843CEFEAA190FAD9D85C26 /* Pods-PMP-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PMP-resources.sh"; sourceTree = "<group>"; };
 		C3D40048489237065E7E5D92C70A6D38 /* Pods-PMP-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PMP-umbrella.h"; sourceTree = "<group>"; };
 		CCC826C98225770F95591527CBAB3FCB /* Pods-PMP.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-PMP.modulemap"; sourceTree = "<group>"; };
@@ -40,11 +41,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B59B96812939CC4CB8B0CEDA7A08AFC /* Gimbal */ = {
+			isa = PBXGroup;
+			children = (
+				64BE5883168CC12774E883118E7D085D /* Frameworks */,
+			);
+			name = Gimbal;
+			path = Gimbal;
+			sourceTree = "<group>";
+		};
+		64BE5883168CC12774E883118E7D085D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B535B65AA6AA567798E6EAB5D6808C22 /* Gimbal.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				9F9A6B4F9AEEBB132167BCEB2433ED9C /* Pods */,
 				9DEC7355439751639036CD8D7D8D26FD /* Products */,
 				F23016252EDCF5CCAC89BF67DB9647B1 /* Targets Support Files */,
 			);
@@ -74,6 +93,14 @@
 			);
 			name = "Pods-PMP";
 			path = "Target Support Files/Pods-PMP";
+			sourceTree = "<group>";
+		};
+		9F9A6B4F9AEEBB132167BCEB2433ED9C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3B59B96812939CC4CB8B0CEDA7A08AFC /* Gimbal */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
