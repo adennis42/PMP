@@ -14,7 +14,6 @@
 		491BA5072128A81A0056CFD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 491BA5062128A81A0056CFD0 /* Assets.xcassets */; };
 		491BA50A2128A81A0056CFD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 491BA5082128A81A0056CFD0 /* LaunchScreen.storyboard */; };
 		49B9719A2128B5D9000E5991 /* Gimbal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49B971992128B5D9000E5991 /* Gimbal.framework */; };
-		49B9719B2128B5F3000E5991 /* Gimbal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49B971992128B5D9000E5991 /* Gimbal.framework */; };
 		49B9719C2128B5F3000E5991 /* Gimbal.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 49B971992128B5D9000E5991 /* Gimbal.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
@@ -53,7 +52,6 @@
 			files = (
 				49B9719A2128B5D9000E5991 /* Gimbal.framework in Frameworks */,
 				0BB6CE81AE4DBFE2D5A8FB57 /* Pods_PMP.framework in Frameworks */,
-				49B9719B2128B5F3000E5991 /* Gimbal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
