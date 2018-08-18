@@ -34,6 +34,14 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Location is used to monitor Gimbal Places</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Location is used to monitor Gimbal Places</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Location is used to monitor Gimbal Places</string>
+	<key>NSBluetoothPeripheralUsageDescription	</key>
+	<string>Bluetooth is used to listen for Gimbal Beacons</string>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

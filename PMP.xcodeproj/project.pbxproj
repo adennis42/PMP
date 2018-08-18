@@ -13,7 +13,24 @@
 		491BA5052128A81A0056CFD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 491BA5032128A81A0056CFD0 /* Main.storyboard */; };
 		491BA5072128A81A0056CFD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 491BA5062128A81A0056CFD0 /* Assets.xcassets */; };
 		491BA50A2128A81A0056CFD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 491BA5082128A81A0056CFD0 /* LaunchScreen.storyboard */; };
+		49B9719A2128B5D9000E5991 /* Gimbal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49B971992128B5D9000E5991 /* Gimbal.framework */; };
+		49B9719B2128B5F3000E5991 /* Gimbal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49B971992128B5D9000E5991 /* Gimbal.framework */; };
+		49B9719C2128B5F3000E5991 /* Gimbal.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 49B971992128B5D9000E5991 /* Gimbal.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		49B9719D2128B5F3000E5991 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				49B9719C2128B5F3000E5991 /* Gimbal.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		23D92A56D7E5B76FC7FF2371 /* Pods_PMP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PMP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +41,7 @@
 		491BA5062128A81A0056CFD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		491BA5092128A81A0056CFD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		491BA50B2128A81A0056CFD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49B971992128B5D9000E5991 /* Gimbal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Gimbal.framework; path = Pods/Gimbal/Frameworks/Gimbal.framework; sourceTree = "<group>"; };
 		543DDE592AE6E8584FF5407B /* Pods-PMP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PMP.release.xcconfig"; path = "Pods/Target Support Files/Pods-PMP/Pods-PMP.release.xcconfig"; sourceTree = "<group>"; };
 		BF1F6C963142EDDDEAF4B361 /* Pods-PMP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PMP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PMP/Pods-PMP.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -33,7 +51,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49B9719A2128B5D9000E5991 /* Gimbal.framework in Frameworks */,
 				0BB6CE81AE4DBFE2D5A8FB57 /* Pods_PMP.framework in Frameworks */,
+				49B9719B2128B5F3000E5991 /* Gimbal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +63,7 @@
 		2C584F75C13AE8E39E86BDE7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				49B971992128B5D9000E5991 /* Gimbal.framework */,
 				23D92A56D7E5B76FC7FF2371 /* Pods_PMP.framework */,
 			);
 			name = Frameworks;
@@ -101,6 +122,7 @@
 				491BA4FA2128A81A0056CFD0 /* Resources */,
 				B30ED2554E78ACF42523D28A /* [CP] Embed Pods Frameworks */,
 				7693004D4A1FFE16E57EF4E2 /* [CP] Copy Pods Resources */,
+				49B9719D2128B5F3000E5991 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -358,6 +380,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 486ZW4P3W3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/Gimbal/Frameworks",
+				);
 				INFOPLIST_FILE = PMP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = adennis.PMP;
@@ -374,6 +400,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 486ZW4P3W3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/Gimbal/Frameworks",
+				);
 				INFOPLIST_FILE = PMP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = adennis.PMP;
