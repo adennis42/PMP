@@ -40,6 +40,7 @@
 		491BA5062128A81A0056CFD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		491BA5092128A81A0056CFD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		491BA50B2128A81A0056CFD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		497BAAEC212C8D1B008700DD /* PMP.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PMP.entitlements; sourceTree = "<group>"; };
 		49B971992128B5D9000E5991 /* Gimbal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Gimbal.framework; path = Pods/Gimbal/Frameworks/Gimbal.framework; sourceTree = "<group>"; };
 		543DDE592AE6E8584FF5407B /* Pods-PMP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PMP.release.xcconfig"; path = "Pods/Target Support Files/Pods-PMP/Pods-PMP.release.xcconfig"; sourceTree = "<group>"; };
 		BF1F6C963142EDDDEAF4B361 /* Pods-PMP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PMP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PMP/Pods-PMP.debug.xcconfig"; sourceTree = "<group>"; };
@@ -88,6 +89,7 @@
 		491BA4FE2128A81A0056CFD0 /* PMP */ = {
 			isa = PBXGroup;
 			children = (
+				497BAAEC212C8D1B008700DD /* PMP.entitlements */,
 				491BA4FF2128A81A0056CFD0 /* AppDelegate.swift */,
 				491BA5012128A81A0056CFD0 /* ViewController.swift */,
 				491BA5032128A81A0056CFD0 /* Main.storyboard */,
@@ -144,6 +146,11 @@
 					491BA4FB2128A81A0056CFD0 = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -376,6 +383,7 @@
 			baseConfigurationReference = BF1F6C963142EDDDEAF4B361 /* Pods-PMP.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PMP/PMP.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 486ZW4P3W3;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -396,6 +404,7 @@
 			baseConfigurationReference = 543DDE592AE6E8584FF5407B /* Pods-PMP.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PMP/PMP.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 486ZW4P3W3;
 				FRAMEWORK_SEARCH_PATHS = (
